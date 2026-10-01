@@ -55,16 +55,16 @@ const animalInfo = [
     species : "Løve", 
     age : 5, 
     food : "Kød" },
-    { className : "animal2", 
-      name : "Dumbo", 
-      species : "Elefant", 
-      age : 8, 
-      food : "Blade og frugt" },
-      { className : "animal3", 
-        name : "Gerald", 
-        species : "Giraf", 
-        age : 6, 
-        food : "Blade fra høje træer" },
+  { className : "animal2", 
+    name : "Dumbo", 
+    species : "Elefant", 
+    age : 8, 
+    food : "Blade og frugt" },
+  { className : "animal3", 
+    name : "Gerald", 
+    species : "Giraf", 
+    age : 6, 
+    food : "Blade fra høje træer" },
         ];
 
 
@@ -83,7 +83,7 @@ console.log(animalInfo);
 
 // ✏️ Skriv din kode her ↓
 
-
+const infoboxElement = document.getElementById("infobox");
 
 // ------------------------------------------------------------------
 // STEP 3: Funktion der viser infoboksen
@@ -107,6 +107,9 @@ console.log(animalInfo);
 
   // ✏️ B. Skriv din kode her ↓
 
+function showInfoBox(text)
+
+infoboxElement.classList.add("show")
 
 }
 
