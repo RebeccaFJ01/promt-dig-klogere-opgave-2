@@ -83,7 +83,7 @@ console.log(animalInfo);
 
 // ✏️ Skriv din kode her ↓
 
-const infoboxElement = document.getElementById("infobox");
+const infoboxElement = document.getElementById("infoBox");
 
 // ------------------------------------------------------------------
 // STEP 3: Funktion der viser infoboksen
@@ -102,14 +102,15 @@ const infoboxElement = document.getElementById("infobox");
 //       (Når du er færdig, må du gerne flytte { op i slutningen
 //       af linjen med funktionshovedet.)
 
-{
-  infoboxElement.innerHTML = text;
+
+  function showInfoBox(text)
 
   // ✏️ B. Skriv din kode her ↓
+{
 
-function showInfoBox(text)
+ infoboxElement.innerHTML = text;
 
-infoboxElement.classList.add("show")
+  infoboxElement.classList.add("show")
 
 }
 
@@ -125,9 +126,9 @@ infoboxElement.classList.add("show")
 //    klikker.
 
 animalInfo.forEach(function (animal) {
-  const element = document.querySelector("." + animal.className);
+  const element = document.querySelector("." + animal.className)});
 
-  element.addEventListener("click", function () {
+  element.addEventListener("click", function () {});
 
     // ✏️ Navnet er lavet for dig. Tilføj tre linjer under navnet:
     //      Art: ...
@@ -136,17 +137,21 @@ animalInfo.forEach(function (animal) {
     //    Afslut hver linje med <br> (undtagen den sidste).
     const animalDetails = `
       <strong>${animal.name}</strong><br>
+        Art: ${animal.name}<br>
+        Alder: ${animal.name}<br>
+        Føde: ${animal.name}<br>
+      `
       
+    `:
 
-      
-    `;
-
+//
     // ✏️ Skriv dit funktionskald til funktionen showInfoBox
     //    med animalDetails her ↓
 
 
   });
 });
+
 
 
 // ==================================================================
@@ -160,4 +165,4 @@ animalInfo.forEach(function (animal) {
 //
 // 💬 Afsluttende sparring: Forklar ChatGPT hele forløbet med dine
 //    egne ord: objekt → klik → tekst → infoboks.
-//    Bed den udfordre din forklaring med ét spørgsmål.
+//    Bed den udfordre din forklaring med ét spørgsmål
